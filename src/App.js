@@ -18,15 +18,27 @@ import {
 	Link,
 } from '@aws-amplify/ui-react'
 import { BsTwitter, BsJournal, BsYoutube } from 'react-icons/bs'
-
+import { API } from 'aws-amplify'
+import { createCandidate } from './graphql/mutations'
 export default function Home() {
 	const { tokens } = useTheme()
 
 	const handleFormSubmit = async (e) => {
 		e.preventDefault()
-		console.log(e.target.name.value)
-		console.log(e.target.email.value)
-		console.log(e.target.message.value)
+		const name = e.target.name.value
+		const email = e.target.email.value
+		const message = e.target.message.value
+
+		await API.graphql({
+			query: createCandidate,
+			variables: {
+				input: {
+					name,
+					email,
+					message,
+				},
+			},
+		})
 	}
 	return (
 		<Flex justifyContent="center" alignItems="center" height="100vh">

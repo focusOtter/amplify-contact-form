@@ -1,0 +1,24 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifycontactform-dev-113223-authRole",
+      "UnauthRoleArn": "arn:aws:iam::311853295989:role/amplify-amplifycontactform-dev-113223-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::311853295989:role/amplify-amplifycontactform-dev-113223-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplifycontactform-dev-113223-deployment",
+      "UnauthRoleName": "amplify-amplifycontactform-dev-113223-unauthRole",
+      "StackName": "amplify-amplifycontactform-dev-113223",
+      "StackId": "arn:aws:cloudformation:us-east-1:311853295989:stack/amplify-amplifycontactform-dev-113223/e66c8060-9660-11ec-b65f-0e02d93817b9",
+      "AmplifyAppId": "dlvtf8fbrhncm"
+    },
+    "categories": {
+      "function": {
+        "amplifycontactform5e85ee9a": {
+          "deploymentBucketName": "amplify-amplifycontactform-dev-113223-deployment",
+          "s3Key": "amplify-builds/amplifycontactform5e85ee9a-6d736b546b4b4b322b49-build.zip",
+          "sesEmail": "mtliendo@focusotter.com"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+[
+	{
+		"Action": ["ses:SendEmail"],
+		"Effect": "Allow",
+		"Resource": ["arn:aws:ses:*:*:identity/mtliendo@focusotter.com"]
+	}
+]
